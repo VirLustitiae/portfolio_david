@@ -1,0 +1,53 @@
+:root {
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --line-height-base: 1.55;
+
+  /* Enterprise color palette (dark base) */
+  --color-bg: #0f141a;
+  --color-bg-alt: #18212b;
+  --color-surface: #1f2a36;
+  --color-surface-alt: #253340;
+  --color-border: #2f4254;
+  --color-accent: #2d81ff;
+  --color-accent-alt: #5aa9ff;
+  --color-accent-glow: 43 129 255; /* for rgba */
+  --color-positive: #2ecc71;
+  --color-warning: #f1c40f;
+  --color-danger: #e74c3c;
+  --color-text: #dbe2ea;
+  --color-text-soft: #9fb2c3;
+  --gradient-accent: linear-gradient(120deg,#2d81ff 0%,#5aa9ff 50%,#7fc3ff 100%);
+
+  /* Sizing / layout */
+  --nav-height: 64px;
+  --content-max-width: 1180px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,.4);
+  --shadow: 0 4px 14px -2px rgba(0,0,0,.5),0 2px 4px -2px rgba(0,0,0,.4);
+  --shadow-glow: 0 0 0 1px rgba(var(--color-accent-glow) / .4),0 0 0 4px rgba(var(--color-accent-glow) / .08),0 12px 32px -4px rgba(var(--color-accent-glow) / .25);
+
+  color-scheme: dark;
+  font-family: var(--font-sans);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: radial-gradient(circle at 20% 20%,#18212b 0%, #0f141a 70%);
+  color: var(--color-text);
+}
+
+/* Light theme (optional placeholder) */
+[data-theme='light'] {
+  --color-bg: #f5f7fa;
+  --color-bg-alt: #e8eef4;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f6fa;
+  --color-border: #d3dde6;
+  --color-text: #1d2730;
+  --color-text-soft: #5a6b7a;
+  background: radial-gradient(circle at 20% 20%,#ffffff 0%, #e8eef4 70%);
+  color-scheme: light;
+}
